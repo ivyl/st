@@ -1901,6 +1901,20 @@ strhandle(void)
 				redraw();
 			}
 			return;
+		case 12:
+			if (narg == 2)
+			{
+				int j = atoi(strescseq.args[1]);
+
+				if (j >= 0 && j < sizeof(colorname))
+				{
+					defaultcs = j;
+					redraw();
+					return;
+				}
+			}
+			fprintf(stderr, "erresc: invalid OSC 12 use");
+			return;
 		}
 		break;
 	case 'k': /* old title set compatibility */
