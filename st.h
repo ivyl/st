@@ -250,6 +250,8 @@ extern unsigned int cursorthickness;
 extern unsigned int blinktimeout;
 extern char termname[];
 extern const char *colorname[];
+extern const char *altcolorname[];
+extern int usealtcolors;
 extern size_t colornamelen;
 extern unsigned int defaultfg;
 extern unsigned int defaultbg;
