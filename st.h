@@ -200,6 +200,7 @@ void resettitle(void);
 char *kmap(KeySym, uint);
 void cresize(int, int);
 void selclear(void);
+void selcopy(Time t);
 
 void selinit(void);
 void selnormalize(void);
